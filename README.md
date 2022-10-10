@@ -39,7 +39,6 @@ URL: ` http://localhost:8000/api/v1`
 ![](/images/doctors_login.JPG)
 
 
-
 3. `/patients/register`(POST): Doctor can Register the patient using name and Phone Number.
 
 #### Need for further use:
@@ -64,9 +63,11 @@ URL: ` http://localhost:8000/api/v1`
 
 ![](/images/patients_all_report.JPG)
 
-5. `/reports/:status`(GET):Retrieve all reports from DB filter on the basis of Status sent in params.
+
+6. `/reports/:status`(GET):Retrieve all reports from DB filter on the basis of Status sent in params.
 
 ![](/images/reports.JPG)
+
 
 ## Unit Tesing 
 
