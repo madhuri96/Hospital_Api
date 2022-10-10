@@ -29,23 +29,23 @@ URL: ` http://localhost:8000/api/v1`
 #### Steps(Postman):
 1. `/doctor/register`(POST): Register the new doctor using name,email and password(all requireds).
 
-![](/images/doctors_register.JPG)
+![](/images/doctors_register.jpg)
 
 
 2. `/doctor/login`(POST): Doctor can Login using email and password.
 
 - Generate JWT Token
 
-![](/images/doctors_login.JPG)
+![](/images/doctors_login.jpg)
 
 
 3. `/patients/register`(POST): Doctor can Register the patient using name and Phone Number.
 
 #### Need for further use:
 
-![](/images/patients_authorization.JPG)
+![](/images/patients_authorization.jpg)
 
-![](/images/patients_register.JPG)
+![](/images/patients_register.jpg)
 
 
 4. `/patients/:id/create_report`(POST): Doctor can create report of the Patients.
@@ -60,12 +60,12 @@ URL: ` http://localhost:8000/api/v1`
 
 5. `/patients/:id/all_reports`(GET):Retrive all reports of a patient by ID.
 
-![](/images/patients_all_report.JPG)
+![](/images/patients_all_report.jpg)
 
 
 6. `/reports/:status`(GET):Retrieve all reports from DB filter on the basis of Status sent in params.
 
-![](/images/reports.JPG)
+![](/images/reports.jpg)
 
 
 ## Unit Tesing 
@@ -80,7 +80,7 @@ URL: ` http://localhost:8000/api/v1`
 
 - Output:(On the console)
 
-![](/images/unit_test.JPG)
+![](/images/unit_test.jpg)
 
 ## Folder Structure
 - **Entry point** : index.js.
