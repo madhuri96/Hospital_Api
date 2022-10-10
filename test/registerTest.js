@@ -13,7 +13,7 @@ let should=chai.should();
 chai.use(chaiHTTP);
 //Parent block
 describe("Patients Register Testing :", () => {
-    let Token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjFlZTMyYzNiNWE2ZGI1MTE4ZjEyYWYiLCJuYW1lIjoiZG9jMSIsInBhc3N3b3JkIjoiMSIsImVtYWlsIjoiYW1hbkBnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIwLTA3LTI3VDE0OjIyOjM2LjcxOVoiLCJ1cGRhdGVkQXQiOiIyMDIwLTA3LTI3VDE0OjIyOjM2LjcxOVoiLCJfX3YiOjAsImlhdCI6MTU5NTg1OTc2NywiZXhwIjoxNTk2ODU5NzY3fQ.F0dH8j9IWcUD6-71eFjD7mtrxp1FhGWvgjX-fZQWMrA";
+    let Token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzQzZWIzZTcwZjcxYWFhNjAwYzZlY2EiLCJuYW1lIjoiZG9jMiIsImVtYWlsIjoibWFkaHVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjIiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTEwVDA5OjUxOjU4LjQyNVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTEwLTEwVDA5OjUxOjU4LjQyNVoiLCJfX3YiOjAsImlhdCI6MTY2NTM5NTcwNywiZXhwIjoxNjc1Mzk1NzA3fQ.zpHUeuYNcn3Sp-mwlZy6p26Z8d7qjukzVcLSkJH3IGI";
     let auth = "Bearer "+Token;
   
     /*
@@ -66,8 +66,8 @@ describe("Patients Register Testing :", () => {
     describe("POST /api/v1/patients/register", () => {
       it("Patient already Exist:", (done) => {
         let patient = {
-          name: "patient1",
-          phone: 789456123,
+          name: "patient2",
+          phone: 2345678910,
         };
   
         chai
@@ -91,7 +91,7 @@ describe("Patients Register Testing :", () => {
       it("Patient Successfully Registered:", (done) => {
         let patient = {
           name: "patient21",
-          phone: 100000004,
+          phone: 1000000004,
         };
   
         chai

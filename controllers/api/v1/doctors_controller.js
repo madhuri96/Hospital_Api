@@ -69,7 +69,7 @@ module.exports.login = async function(req, res){
             if(pass==pwdDb){
                 return res.status(200).json({
                     data:{
-                        token: jwt.sign(doctor.toJSON(), 'hospitalapi', {expiresIn: 1000000})
+                        token: jwt.sign(doctor.toJSON(), 'hospitalapi', {expiresIn: 10000000})
                     }
                 })
             }

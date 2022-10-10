@@ -13,9 +13,9 @@ let should=chai.should();
 chai.use(chaiHTTP);
 //parent block
 describe("Patients Report Testing:", () => {
-    let Token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjFlZTMyYzNiNWE2ZGI1MTE4ZjEyYWYiLCJuYW1lIjoiZG9jMSIsInBhc3N3b3JkIjoiMSIsImVtYWlsIjoiYW1hbkBnbWFpbC5jb20iLCJjcmVhdGVkQXQiOiIyMDIwLTA3LTI3VDE0OjIyOjM2LjcxOVoiLCJ1cGRhdGVkQXQiOiIyMDIwLTA3LTI3VDE0OjIyOjM2LjcxOVoiLCJfX3YiOjAsImlhdCI6MTU5NTg1OTc2NywiZXhwIjoxNTk2ODU5NzY3fQ.F0dH8j9IWcUD6-71eFjD7mtrxp1FhGWvgjX-fZQWMrA";
+    let Token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MzQzZWIzZTcwZjcxYWFhNjAwYzZlY2EiLCJuYW1lIjoiZG9jMiIsImVtYWlsIjoibWFkaHVyaUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjIiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTEwVDA5OjUxOjU4LjQyNVoiLCJ1cGRhdGVkQXQiOiIyMDIyLTEwLTEwVDA5OjUxOjU4LjQyNVoiLCJfX3YiOjAsImlhdCI6MTY2NTM5NTcwNywiZXhwIjoxNjc1Mzk1NzA3fQ.zpHUeuYNcn3Sp-mwlZy6p26Z8d7qjukzVcLSkJH3IGI";
     let auth = "Bearer "+Token;
-    const patientID = "5f1ee3895f05cd0cf9819236"; //patient1
+    const patientID = "6343f252d5756d9d2af64743"; //patient2
     /*
         * Test the /POST route
     */
@@ -23,8 +23,8 @@ describe("Patients Report Testing:", () => {
     describe("POST /api/v1/patients/id/create_report", () => {
       it("Error because Doctor is not Authorized:", (done) => {
         let report = {
-          status: 0,
-          doctor: "5f1ee32c3b5a6db5118f12af" ,//doctor id
+          status: 1,
+          doctor: "6343eb3e70f71aaa600c6eca" ,//doctor2 id
         };
   
         chai
@@ -65,8 +65,8 @@ describe("Patients Report Testing:", () => {
     describe("POST /api/v1/patients/id/create_report", () => {
       it("Report Successfully Created:", (done) => {
         let report = {
-          status: 0,
-          doctor: "5f1ee32c3b5a6db5118f12af" ,
+          status: 1,
+          doctor: "6343eb3e70f71aaa600c6eca" ,
         };
   
         chai

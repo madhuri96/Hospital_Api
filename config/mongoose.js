@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/HospitalAPI',{useNewUrlParser: true});
+mongoose.connect('mongodb+srv://madhuribansode12:root@cluster0.asf8j5h.mongodb.net/Hospital_Api?retryWrites=true&w=majority',{useNewUrlParser: true});  //mongodb://localhost/HospitalAPI
 
 const db = mongoose.connection;
 

@@ -13,7 +13,7 @@ let should=chai.should();
 chai.use(chaiHTTP);
 //parent block
 describe("Display All Report of Patients Report Testing :", () => {
-    const patientID = "5f1ee3895f05cd0cf9819236"; //patient1
+    const patientID = "6343f252d5756d9d2af64743"; //patient2
     /*
         * Test the /GET route
     */
