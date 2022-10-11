@@ -35,6 +35,18 @@ app.use(passport.initialize());
 //use express router
 app.use('/',require('./routes/index'));
 
+
+app.get("/", (req, res) => {
+    res.send(
+      "<body style='background-color:#03dbc7'><h1 style='text-align:center; font-size:45px'>Welcome to Hospital API </h1></body>"
+    );
+  });
+  app.get("*", (req, res) => {
+    res.send(
+      "<body style='background-color:#03dbc7'><h1 style='text-align:center; font-size:40px'>ERROR 404 </h1></body>"
+    );
+  });
+
 //server running on port 8000
 app.listen(port, function(err){
     if (err){
